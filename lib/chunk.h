@@ -4,6 +4,7 @@
 
 typedef enum {
     _RETURN,
+    _FUNCTION
 } OPCODE;
 
 typedef struct {
