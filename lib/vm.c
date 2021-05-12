@@ -2,6 +2,8 @@
 #include "vm.h"
 #include "debug.h"
 #include "common.h"
+
+// The TAG vm, which is in-charge of running the code given
 VM vm;
 
 void initVM() {

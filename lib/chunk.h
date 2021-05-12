@@ -3,6 +3,8 @@
 #include "common.h"
 #include "value.h"
 
+
+// Supported OP codes that the VM uses
 typedef enum {
     OP_CONSTANT,
     OP_ADD,
@@ -13,6 +15,7 @@ typedef enum {
     OP_RETURN,
 } OPCODE;
 
+// The main chunk structure that holds op codes and constant values
 typedef struct {
     int count;
     int capacity;
@@ -21,6 +24,7 @@ typedef struct {
     ValueArray constants;
 } Chunk;
 
+// Function declarations for managing the chunks
 void initChunk(Chunk* chunk);
 void freeChunk(Chunk* chunk);
 void writeChunk(Chunk* chunk, uint8_t byte, int line);

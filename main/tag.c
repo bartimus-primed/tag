@@ -2,6 +2,8 @@
 #include "../lib/chunk.h"
 #include "../lib/debug.h"
 #include "../lib/vm.h"
+
+// Testing binary operations on the vm stack
 int main(int argc, const char* argv[]) {
     Chunk chunk;
     initVM();
