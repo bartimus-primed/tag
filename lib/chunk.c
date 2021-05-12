@@ -32,3 +32,13 @@ int addConstant(Chunk* chunk, Value value) {
     writeValueArray(&chunk->constants, value);
     return chunk->constants.count - 1;
 }
+
+// void writeConstant(Chunk* chunk, Value value, int line) {
+//     switch(chunk->code[chunk->count]) {
+//         case OP_CONSTANT:
+//             writeChunk(chunk, addConstant(chunk, value), line);
+//         case OP_CONSTANT_LONG:
+//             writeChunk(chunk, addConstant(chunk, value), line);
+
+//     }
+// }
